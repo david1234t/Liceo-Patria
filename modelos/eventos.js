@@ -1,32 +1,32 @@
 import mongoose from "mongoose";
 const eventSchema = new mongoose.Schema(
     {
-        fecha : {
+        fecha: {
             type: Date,
             require : true
 
         },
-        equipo1 : {
+        equipo1: {
             type: String,
             require : true
 
         },
-        equipo2 : {
+        equipo2: {
             type: String,
             require : true
 
         },
-        marcador1 : {
+        marcador1: {
             type: Number,
             require : true
 
         },
-        marcador2 : {
+        marcador2: {
             type: Number,
             require : true
 
         },
-        tipodeevento : {
+        tipodeevento: {
             type: String,
             require : true
         }
@@ -35,7 +35,7 @@ const eventSchema = new mongoose.Schema(
         timestamps : true,
         versionKey : false,
     }
-    )
+);
 
-    export const evento = mongoose.model('ceventos',eventSchema);
-    export default evento;
+export const evento = mongoose.model('ceventos',eventSchema)
+export default evento;

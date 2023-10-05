@@ -1,8 +1,10 @@
 import express from "express"
-import db from "../mongodb.js"
-import  regevento  from "../controles/controles.js";
-
 export const router = express.Router();
+import  regevento  from "../controles/controles.js"
+import db from "../mongodb.js"
+
+
+
 //Rutas para manejar los eventos
 router.post('/regevento', regevento);
 
