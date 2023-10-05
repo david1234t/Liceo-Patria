@@ -9,8 +9,8 @@ app.use(express.json());
 //cookies
 //app.use= (cookiesParser());
 app.use('/usuarios',router);
-app.listen(4000, () =>{
-    console.log('Servidor corriendo 🛴👌🐱‍🏍 en http://localhost:4000/')
+app.listen(3000, () =>{
+    console.log('Servidor corriendo 🛴👌🐱‍🏍 en http://localhost:3000/')
 });
 
 var nombre = "David Tequita";
